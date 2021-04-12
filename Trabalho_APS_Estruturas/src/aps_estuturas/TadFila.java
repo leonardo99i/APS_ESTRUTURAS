@@ -72,4 +72,17 @@ public class TadFila {
             }
         }
     }
+
+    public void Atendimento(int numeros){
+        for(int i = 0; i < 60; i++){
+            if(numeros >= 30){
+                System.out.println("Atendimento Prefencial");
+                Dequeue();
+            }else{
+                System.out.println("Atendimento Comum");
+                Dequeue();
+            }
+        }
+    }
+
 }

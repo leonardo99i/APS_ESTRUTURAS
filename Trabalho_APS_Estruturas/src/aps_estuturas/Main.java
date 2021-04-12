@@ -5,8 +5,8 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
         TadFila fila = new TadFila(60);
-        int numeros;
-        int[] num = new int[20];
+        int numeros = 0;
+        int[] num = new int[21];
         Random gerador = new Random();
 
         for(int i = 0; i<num.length; i++){
@@ -23,6 +23,8 @@ public class Main {
             fila.Enqueue(num[i]);
         }
         fila.imprimeFila();
+
+        fila.Atendimento(numeros);
+        fila.imprimeFila();
     }
-    
 }
