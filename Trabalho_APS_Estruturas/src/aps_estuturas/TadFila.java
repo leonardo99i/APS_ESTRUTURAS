@@ -3,13 +3,13 @@ package aps_estuturas;
 public class TadFila {
 
     //Atributo
-    private double [] dados;
+    private int [] dados;
     private int tamVetor;
     private int posFinal;
 
     //Construtor
     public TadFila(int tamanhoMax){
-        this.dados = new double[tamanhoMax];
+        this.dados = new int[tamanhoMax];
         this.tamVetor = tamanhoMax;
         this.posFinal = -1;
     }    
@@ -40,7 +40,7 @@ public class TadFila {
         }
     }
 
-    public void Enqueue(double valor){
+    public void Enqueue(int valor){
         if(isFull()){
             System.out.println("Não inseriu.");
         }else{
@@ -49,17 +49,27 @@ public class TadFila {
         }
     }
 
-    public double Dequeue(){
+    public int Dequeue(){
         if(isEmpty()){
             System.out.println("Não remove");
             return 0;
         }else{
-            double elemento = this.dados[0];
+            int elemento = this.dados[0];
             for(int i = 0; i < this.posFinal; i++){
                 this.dados[i] = this.dados[i+1];
             }
             this.posFinal--;
             return elemento;
+        }
+    }
+
+    public void imprimeFila(){
+        if(isEmpty()){
+            System.out.println("Vazia!");
+        }else{
+            for(int i = 0; i <= this.posFinal; i++){
+                System.out.println("Elemento[ " + i + " ] = " + this.dados[i]);
+            }
         }
     }
 }
