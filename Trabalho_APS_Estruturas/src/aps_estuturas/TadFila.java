@@ -25,7 +25,7 @@ public class TadFila {
             System.out.println("Fila cheia");
             return true;
         }else{
-            System.out.println("Fila não cheia");
+            System.out.println("Filha não cheia");
             return false;
         }
     }
@@ -35,7 +35,7 @@ public class TadFila {
             System.out.println("Fila vazia");
             return true;
         }else{
-            System.out.println("Fila não vazia");
+            System.out.println("Filha não vazia");
             return false;
         }
     }
