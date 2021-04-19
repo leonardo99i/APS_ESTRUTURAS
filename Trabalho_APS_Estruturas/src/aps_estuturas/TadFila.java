@@ -1,6 +1,6 @@
 package aps_estuturas;
 
-public class TadFila {
+public class TadFila{
 
     //Atributo
     private int [] dados;
@@ -22,20 +22,16 @@ public class TadFila {
 
     public boolean isFull(){
         if(this.posFinal == this.tamVetor -1){
-            System.out.println("Fila cheia");
             return true;
         }else{
-            System.out.println("Fila não cheia");
             return false;
         }
     }
 
     public boolean isEmpty(){
         if(this.posFinal == -1){
-            System.out.println("Fila vazia");
             return true;
         }else{
-            System.out.println("Fila não vazia");
             return false;
         }
     }
@@ -72,17 +68,4 @@ public class TadFila {
             }
         }
     }
-
-    public void Atendimento(int numeros){
-        for(int i = 0; i < 60; i++){
-            if(numeros >= 30){
-                System.out.println("Atendimento Prefencial");
-                Dequeue();
-            }else{
-                System.out.println("Atendimento Comum");
-                Dequeue();
-            }
-        }
-    }
-
 }
