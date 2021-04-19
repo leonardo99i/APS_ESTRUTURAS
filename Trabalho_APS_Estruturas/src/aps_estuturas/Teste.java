@@ -41,10 +41,10 @@ public class Teste{
             fila_Prioridade.Enqueue(num[i]);         
         }
 
-        System.out.println("Fila Comum!");
+        System.out.println("Fila Comum!!!");
         fila_Comum.imprimeFila();
         System.out.println();
-        System.out.println("Fila Prioritaria!");
+        System.out.println("Fila Prioritaria!!!");
         fila_Prioridade.imprimeFila();
         System.out.println();
         
