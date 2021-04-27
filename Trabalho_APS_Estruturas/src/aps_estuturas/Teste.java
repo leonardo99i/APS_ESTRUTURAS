@@ -68,6 +68,10 @@ public class Teste{
     }        
     private static void atendeFila(TadFila fila){
         int pessoaAtendida = fila.Dequeue();
-        System.out.println(pessoaAtendida + " foi atendida");
+        if(pessoaAtendida == 0){
+            System.out.println("Proximo da fila comum");
+        }else{
+            System.out.println("Cliente " + pessoaAtendida + " foi atendida");
+        }
     }
 }

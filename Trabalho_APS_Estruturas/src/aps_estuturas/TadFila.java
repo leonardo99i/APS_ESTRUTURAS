@@ -47,7 +47,7 @@ public class TadFila{
 
     public int Dequeue(){
         if(isEmpty()){
-            System.out.println("Não remove");
+            System.out.println("Não Existe mais a fila Preferencial.");
             return 0;
         }else{
             int elemento = this.dados[0];
@@ -64,7 +64,7 @@ public class TadFila{
             System.out.println("Vazia!");
         }else{
             for(int i = 0; i <= this.posFinal; i++){
-                System.out.println("Elemento[ " + i + " ] = " + this.dados[i]);
+                System.out.println("Cliente: [ " + i + " ] = " + "Senha: " + this.dados[i]);
             }
         }
     }
