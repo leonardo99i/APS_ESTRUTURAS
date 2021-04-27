@@ -11,6 +11,9 @@ public class Teste{
         int[] num = new int[11];
         Random gerador = new Random();
 
+        System.out.println("O Banco está aberto!!");
+        System.out.println();
+
         for(int i = 0; i<num.length; i++){
             numeros = gerador.nextInt(60) + 1;
             for(int j=0; j<num.length; j++){
@@ -65,11 +68,13 @@ public class Teste{
                 }
             }
         }
+        System.out.println();
+        System.out.println("O Banco agradece sua visita, volte sempre!!! Você é o cliente Número 1.");
     }        
     private static void atendeFila(TadFila fila){
         int pessoaAtendida = fila.Dequeue();
         if(pessoaAtendida == 0){
-            System.out.println("Proximo da fila comum");
+            System.out.println("Proximo da fila comum.");
         }else{
             System.out.println("Cliente " + pessoaAtendida + " foi atendida");
         }
