@@ -69,7 +69,7 @@ public class Teste{
             }
         }
         System.out.println();
-        System.out.println("O Banco agradece sua visita, volte sempre!!! Você é o cliente Número 1.");
+        System.out.println("O Banco agradece sua visita, volte sempre!!! Você é o cliente Número 1");
     }        
     private static void atendeFila(TadFila fila){
         int pessoaAtendida = fila.Dequeue();
