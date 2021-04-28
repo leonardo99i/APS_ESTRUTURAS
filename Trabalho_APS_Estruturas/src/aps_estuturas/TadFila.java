@@ -47,7 +47,7 @@ public class TadFila{
 
     public int Dequeue(){
         if(isEmpty()){
-            System.out.println("Não Existe mais a fila Preferencial.");
+            System.out.println("Não Existe mais a fila Preferencial..");
             return 0;
         }else{
             int elemento = this.dados[0];
